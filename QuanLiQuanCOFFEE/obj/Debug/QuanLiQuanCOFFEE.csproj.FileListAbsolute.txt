@@ -12,3 +12,6 @@ C:\LẬP TRÌNH\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.frmNhanVien.resource
 C:\Users\huyen\Desktop\New folder (2)\QuanLiQuanCOFFEE\bin\Debug\QuanLiQuanCOFFEE.exe.config
 C:\Users\huyen\Desktop\New folder (2)\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.exe
 C:\Users\huyen\Desktop\New folder (2)\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.pdb
+C:\Users\MINHTAM\Desktop\JKUH\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\QuanLiQuanCOFFEE.exe.config
+C:\Users\MINHTAM\Desktop\JKUH\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.exe
+C:\Users\MINHTAM\Desktop\JKUH\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.pdb
