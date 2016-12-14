@@ -26,5 +26,10 @@ namespace QuanLiQuanCOFFEE
         {
 
         }
+
+        private void frmchinh_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

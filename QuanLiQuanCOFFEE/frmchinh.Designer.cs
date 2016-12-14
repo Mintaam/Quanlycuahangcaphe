@@ -83,26 +83,26 @@
             // tênToolStripMenuItem
             // 
             this.tênToolStripMenuItem.Name = "tênToolStripMenuItem";
-            this.tênToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tênToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.tênToolStripMenuItem.Text = "Nhân viên";
             this.tênToolStripMenuItem.Click += new System.EventHandler(this.tênToolStripMenuItem_Click);
             // 
             // mãNhânViênToolStripMenuItem
             // 
             this.mãNhânViênToolStripMenuItem.Name = "mãNhânViênToolStripMenuItem";
-            this.mãNhânViênToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mãNhânViênToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.mãNhânViênToolStripMenuItem.Text = "Hàng hóa";
             // 
             // nhàCungCấpToolStripMenuItem
             // 
             this.nhàCungCấpToolStripMenuItem.Name = "nhàCungCấpToolStripMenuItem";
-            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.nhàCungCấpToolStripMenuItem.Text = "Hóa đơn";
             // 
             // nhàCungCấpToolStripMenuItem1
             // 
             this.nhàCungCấpToolStripMenuItem1.Name = "nhàCungCấpToolStripMenuItem1";
-            this.nhàCungCấpToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.nhàCungCấpToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
             this.nhàCungCấpToolStripMenuItem1.Text = "Nhà cung cấp";
             // 
             // panel1
@@ -197,6 +197,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "frmchinh";
             this.Text = "Phần mềm quản lí";
+            this.Load += new System.EventHandler(this.frmchinh_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
