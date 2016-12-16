@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QuanLiQuanCOFFEE
 {
@@ -16,20 +17,16 @@ namespace QuanLiQuanCOFFEE
         {
             InitializeComponent();
         }
-
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void ketnoi()
         {
-
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-
+            SqlConnection ketnoi = new SqlConnection(@"Data Source=DESKTOP-R128S04\SQLEXPRESS;Initial Catalog=QLCF2;Integrated Security=True");
         }
 
         private void frmHangHoa_Load(object sender, EventArgs e)
         {
 
         }
+
+
     }
 }
