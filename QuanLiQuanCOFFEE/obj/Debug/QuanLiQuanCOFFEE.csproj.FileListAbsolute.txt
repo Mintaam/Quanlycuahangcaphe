@@ -18,3 +18,6 @@ C:\Users\MINHTAM\Desktop\JKUH\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\Quan
 C:\Users\admin\Desktop\form\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\QuanLiQuanCOFFEE.exe.config
 C:\Users\admin\Desktop\form\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.exe
 C:\Users\admin\Desktop\form\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.pdb
+C:\Users\MINHTAM\Desktop\FRM\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\QuanLiQuanCOFFEE.exe.config
+C:\Users\MINHTAM\Desktop\FRM\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.exe
+C:\Users\MINHTAM\Desktop\FRM\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.pdb

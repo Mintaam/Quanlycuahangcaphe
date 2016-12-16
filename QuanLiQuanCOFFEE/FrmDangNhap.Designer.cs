@@ -1,6 +1,6 @@
 ﻿namespace QuanLiQuanCOFFEE
 {
-    partial class Form1
+    partial class FrmDangNhap
     {
         /// <summary>
         /// Required designer variable.
