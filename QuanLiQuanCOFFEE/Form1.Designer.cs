@@ -50,38 +50,47 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(18, 18);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(422, 255);
+            this.panel1.Size = new System.Drawing.Size(633, 392);
             this.panel1.TabIndex = 0;
             // 
             // btExit
             // 
-            this.btExit.Location = new System.Drawing.Point(275, 189);
+            this.btExit.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btExit.Font = new System.Drawing.Font("Times New Roman", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btExit.Location = new System.Drawing.Point(412, 291);
+            this.btExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btExit.Name = "btExit";
-            this.btExit.Size = new System.Drawing.Size(96, 33);
+            this.btExit.Size = new System.Drawing.Size(144, 51);
             this.btExit.TabIndex = 2;
             this.btExit.Text = "Thoát";
-            this.btExit.UseVisualStyleBackColor = true;
+            this.btExit.UseVisualStyleBackColor = false;
             this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
             // btLogin
             // 
-            this.btLogin.Location = new System.Drawing.Point(173, 189);
+            this.btLogin.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btLogin.Font = new System.Drawing.Font("Times New Roman", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btLogin.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btLogin.Location = new System.Drawing.Point(220, 291);
+            this.btLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btLogin.Name = "btLogin";
-            this.btLogin.Size = new System.Drawing.Size(96, 33);
+            this.btLogin.Size = new System.Drawing.Size(144, 51);
             this.btLogin.TabIndex = 2;
             this.btLogin.Text = "Đăng nhập";
-            this.btLogin.UseVisualStyleBackColor = true;
+            this.btLogin.UseVisualStyleBackColor = false;
             this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(102, 15);
+            this.label3.Location = new System.Drawing.Point(153, 23);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(207, 36);
+            this.label3.Size = new System.Drawing.Size(314, 55);
             this.label3.TabIndex = 1;
             this.label3.Text = "ĐĂNG NHẬP";
             // 
@@ -92,26 +101,30 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.txtPass);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(23, 107);
+            this.panel3.Location = new System.Drawing.Point(34, 165);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(386, 59);
+            this.panel3.Size = new System.Drawing.Size(579, 91);
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(159, 14);
+            this.txtPass.Location = new System.Drawing.Point(226, 22);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(189, 20);
+            this.txtPass.Size = new System.Drawing.Size(349, 53);
             this.txtPass.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 11);
+            this.label2.Location = new System.Drawing.Point(4, 33);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 22);
+            this.label2.Size = new System.Drawing.Size(145, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mật khẩu:";
             // 
@@ -122,17 +135,20 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.txtUsername);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(23, 54);
+            this.panel2.Location = new System.Drawing.Point(34, 83);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(386, 65);
+            this.panel2.Size = new System.Drawing.Size(579, 100);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(159, 17);
+            this.txtUsername.Location = new System.Drawing.Point(226, 20);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(189, 20);
+            this.txtUsername.Size = new System.Drawing.Size(349, 52);
             this.txtUsername.TabIndex = 1;
             this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
@@ -140,18 +156,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 13);
+            this.label1.Location = new System.Drawing.Point(4, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 22);
+            this.label1.Size = new System.Drawing.Size(209, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên đăng nhập:";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 290);
+            this.ClientSize = new System.Drawing.Size(670, 446);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Đăng nhập";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
