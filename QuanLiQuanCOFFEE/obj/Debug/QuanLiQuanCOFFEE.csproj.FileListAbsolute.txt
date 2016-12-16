@@ -36,3 +36,24 @@ C:\Users\huyen\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\
 C:\Users\huyen\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmPhieuNhap.resources
 C:\Users\huyen\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.Properties.Resources.resources
 C:\Users\huyen\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.csproj.GenerateResource.Cache
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\QuanLiQuanCOFFEE.exe.config
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.exe
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.pdb
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\QuanLiQuanCOFFEE.exe
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\QuanLiQuanCOFFEE.pdb
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\mscorlib.dll
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\normidna.nlp
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\normnfc.nlp
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\normnfd.nlp
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\normnfkc.nlp
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\normnfkd.nlp
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.csprojResolveAssemblyReference.cache
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmDangNhap.resources
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.frmchinh.resources
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmHangHoa.resources
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmHoaDon.resources
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmNhaCungCap.resources
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmNhanVien.resources
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmPhieuNhap.resources
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.Properties.Resources.resources
+C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.csproj.GenerateResource.Cache
