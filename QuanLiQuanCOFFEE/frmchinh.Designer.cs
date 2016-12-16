@@ -53,63 +53,69 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adminToolStripMenuItem,
             this.thôngTinTàiKhoảnToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(664, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(996, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // adminToolStripMenuItem
             // 
+            this.adminToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(77, 29);
             this.adminToolStripMenuItem.Text = "Admin";
             // 
             // thôngTinTàiKhoảnToolStripMenuItem
             // 
+            this.thôngTinTàiKhoảnToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.thôngTinTàiKhoảnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tênToolStripMenuItem,
             this.mãNhânViênToolStripMenuItem,
             this.nhàCungCấpToolStripMenuItem,
             this.nhàCungCấpToolStripMenuItem1});
             this.thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
-            this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(100, 29);
             this.thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin";
             this.thôngTinTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.thôngTinTàiKhoảnToolStripMenuItem_Click);
             // 
             // tênToolStripMenuItem
             // 
             this.tênToolStripMenuItem.Name = "tênToolStripMenuItem";
-            this.tênToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.tênToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.tênToolStripMenuItem.Text = "Nhân viên";
             this.tênToolStripMenuItem.Click += new System.EventHandler(this.tênToolStripMenuItem_Click);
             // 
             // mãNhânViênToolStripMenuItem
             // 
             this.mãNhânViênToolStripMenuItem.Name = "mãNhânViênToolStripMenuItem";
-            this.mãNhânViênToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.mãNhânViênToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.mãNhânViênToolStripMenuItem.Text = "Hàng hóa";
             // 
             // nhàCungCấpToolStripMenuItem
             // 
             this.nhàCungCấpToolStripMenuItem.Name = "nhàCungCấpToolStripMenuItem";
-            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.nhàCungCấpToolStripMenuItem.Text = "Hóa đơn";
             // 
             // nhàCungCấpToolStripMenuItem1
             // 
             this.nhàCungCấpToolStripMenuItem1.Name = "nhàCungCấpToolStripMenuItem1";
-            this.nhàCungCấpToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
+            this.nhàCungCấpToolStripMenuItem1.Size = new System.Drawing.Size(211, 30);
             this.nhàCungCấpToolStripMenuItem1.Text = "Nhà cung cấp";
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(12, 27);
+            this.panel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(18, 42);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(278, 351);
+            this.panel1.Size = new System.Drawing.Size(417, 540);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -117,84 +123,98 @@
             this.panel2.Controls.Add(this.btAdd);
             this.panel2.Controls.Add(this.numericUpDown1);
             this.panel2.Controls.Add(this.cbChoose);
-            this.panel2.Location = new System.Drawing.Point(296, 27);
+            this.panel2.Location = new System.Drawing.Point(444, 40);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(356, 53);
+            this.panel2.Size = new System.Drawing.Size(534, 84);
             this.panel2.TabIndex = 2;
             // 
             // btAdd
             // 
-            this.btAdd.Location = new System.Drawing.Point(182, 10);
+            this.btAdd.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btAdd.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btAdd.Location = new System.Drawing.Point(273, 15);
+            this.btAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btAdd.Name = "btAdd";
-            this.btAdd.Size = new System.Drawing.Size(75, 23);
+            this.btAdd.Size = new System.Drawing.Size(112, 35);
             this.btAdd.TabIndex = 1;
             this.btAdd.Text = "Thêm";
-            this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.UseVisualStyleBackColor = false;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(277, 13);
+            this.numericUpDown1.Location = new System.Drawing.Point(416, 22);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDown1.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(41, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(88, 26);
             this.numericUpDown1.TabIndex = 2;
             // 
             // cbChoose
             // 
             this.cbChoose.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.cbChoose.FormattingEnabled = true;
-            this.cbChoose.Location = new System.Drawing.Point(12, 12);
+            this.cbChoose.Location = new System.Drawing.Point(18, 18);
+            this.cbChoose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbChoose.Name = "cbChoose";
-            this.cbChoose.Size = new System.Drawing.Size(149, 21);
+            this.cbChoose.Size = new System.Drawing.Size(222, 28);
             this.cbChoose.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.listView1);
-            this.panel3.Location = new System.Drawing.Point(296, 86);
+            this.panel3.Location = new System.Drawing.Point(444, 132);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(356, 228);
+            this.panel3.Size = new System.Drawing.Size(534, 351);
             this.panel3.TabIndex = 3;
             // 
             // listView1
             // 
-            this.listView1.Location = new System.Drawing.Point(12, 3);
+            this.listView1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.listView1.Location = new System.Drawing.Point(18, 5);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(341, 222);
+            this.listView1.Size = new System.Drawing.Size(510, 339);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.btToTal);
-            this.panel4.Location = new System.Drawing.Point(296, 320);
+            this.panel4.Location = new System.Drawing.Point(444, 492);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(355, 57);
+            this.panel4.Size = new System.Drawing.Size(532, 88);
             this.panel4.TabIndex = 4;
             // 
             // btToTal
             // 
-            this.btToTal.Location = new System.Drawing.Point(241, 12);
+            this.btToTal.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btToTal.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btToTal.Location = new System.Drawing.Point(362, 18);
+            this.btToTal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btToTal.Name = "btToTal";
-            this.btToTal.Size = new System.Drawing.Size(95, 32);
+            this.btToTal.Size = new System.Drawing.Size(142, 49);
             this.btToTal.TabIndex = 2;
             this.btToTal.Text = "Thanh toán";
-            this.btToTal.UseVisualStyleBackColor = true;
+            this.btToTal.UseVisualStyleBackColor = false;
             // 
             // frmchinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 390);
+            this.ClientSize = new System.Drawing.Size(996, 600);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmchinh";
             this.Text = "Phần mềm quản lí";
             this.Load += new System.EventHandler(this.frmchinh_Load);

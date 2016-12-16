@@ -5,18 +5,19 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QuanLiQuanCOFFEE
 {
-    public partial class FrmNhaCungCap : Form
+    public partial class FrmPhieuNhap : Form
     {
-        public FrmNhaCungCap()
+        public FrmPhieuNhap()
         {
             InitializeComponent();
         }
 
-        private void FrmNhaCungCap_Load(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
