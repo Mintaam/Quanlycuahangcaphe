@@ -1,6 +1,6 @@
 ﻿namespace QuanLiQuanCOFFEE
 {
-    partial class frmNhanVien
+    partial class FrmNhanVien
     {
         /// <summary>
         /// Required designer variable.
@@ -28,72 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvNV = new System.Windows.Forms.DataGridView();
+            this.lbNV = new System.Windows.Forms.Label();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNV)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvNV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(36, 65);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(478, 391);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNV.Location = new System.Drawing.Point(36, 65);
+            this.dgvNV.Name = "dgvNV";
+            this.dgvNV.Size = new System.Drawing.Size(478, 327);
+            this.dgvNV.TabIndex = 0;
             // 
-            // label1
+            // lbNV
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(151, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "danh sách nhân viên";
+            this.lbNV.AutoSize = true;
+            this.lbNV.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNV.Location = new System.Drawing.Point(151, 19);
+            this.lbNV.Name = "lbNV";
+            this.lbNV.Size = new System.Drawing.Size(259, 31);
+            this.lbNV.TabIndex = 1;
+            this.lbNV.Text = "Danh sách nhân viên";
             // 
-            // btnAdd
+            // btnSua
             // 
-            this.btnAdd.Location = new System.Drawing.Point(217, 473);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(86, 35);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnSua.Location = new System.Drawing.Point(206, 423);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(86, 35);
+            this.btnSua.TabIndex = 2;
+            this.btnSua.Text = "Thêm";
+            this.btnSua.UseVisualStyleBackColor = true;
             // 
-            // btnDelete
+            // btnXoa
             // 
-            this.btnDelete.Location = new System.Drawing.Point(334, 473);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(86, 35);
-            this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "Xóa";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnXoa.Location = new System.Drawing.Point(323, 423);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(86, 35);
+            this.btnXoa.TabIndex = 3;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
             // 
-            // btnSave
+            // btnLuu
             // 
-            this.btnSave.Location = new System.Drawing.Point(439, 473);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(86, 35);
-            this.btnSave.TabIndex = 4;
-            this.btnSave.Text = "Lưu";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnLuu.Location = new System.Drawing.Point(428, 423);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(86, 35);
+            this.btnLuu.TabIndex = 4;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
             // 
-            // frmNhanVien
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(87, 424);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 35);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Thêm";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // FrmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(587, 540);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "frmNhanVien";
+            this.ClientSize = new System.Drawing.Size(587, 471);
+            this.Controls.Add(this.btnLuu);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.lbNV);
+            this.Controls.Add(this.dgvNV);
+            this.Name = "FrmNhanVien";
             this.Text = "frmNhanVien";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,10 +112,11 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.DataGridView dgvNV;
+        private System.Windows.Forms.Label lbNV;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button button1;
     }
 }
