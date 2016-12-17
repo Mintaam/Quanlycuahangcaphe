@@ -44,78 +44,78 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmDangNhap.cs">
+    <Compile Include="View\FrmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDangNhap.Designer.cs">
+    <Compile Include="View\FrmDangNhap.Designer.cs">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmchinh.cs">
+    <Compile Include="View\frmChinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmchinh.Designer.cs">
-      <DependentUpon>frmchinh.cs</DependentUpon>
+    <Compile Include="View\frmChinh.Designer.cs">
+      <DependentUpon>frmChinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmHangHoa.cs">
+    <Compile Include="View\FrmHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmHangHoa.Designer.cs">
+    <Compile Include="View\FrmHangHoa.Designer.cs">
       <DependentUpon>FrmHangHoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmHoaDon.cs">
+    <Compile Include="View\FrmHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmHoaDon.Designer.cs">
+    <Compile Include="View\FrmHoaDon.Designer.cs">
       <DependentUpon>FrmHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmNhaCungCap.cs">
+    <Compile Include="View\FrmNhaCungCap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmNhaCungCap.Designer.cs">
+    <Compile Include="View\FrmNhaCungCap.Designer.cs">
       <DependentUpon>FrmNhaCungCap.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmNhanVien.cs">
+    <Compile Include="View\FrmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmNhanVien.Designer.cs">
+    <Compile Include="View\FrmNhanVien.Designer.cs">
       <DependentUpon>FrmNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPhieuNhap.cs">
+    <Compile Include="View\FrmPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPhieuNhap.Designer.cs">
+    <Compile Include="View\FrmPhieuNhap.Designer.cs">
       <DependentUpon>FrmPhieuNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmThucDon.cs">
+    <Compile Include="View\FrmThucDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmThucDon.Designer.cs">
+    <Compile Include="View\FrmThucDon.Designer.cs">
       <DependentUpon>FrmThucDon.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmDangNhap.resx">
+    <EmbeddedResource Include="View\FrmDangNhap.resx">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmchinh.resx">
-      <DependentUpon>frmchinh.cs</DependentUpon>
+    <EmbeddedResource Include="View\frmChinh.resx">
+      <DependentUpon>frmChinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmHangHoa.resx">
+    <EmbeddedResource Include="View\FrmHangHoa.resx">
       <DependentUpon>FrmHangHoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmHoaDon.resx">
+    <EmbeddedResource Include="View\FrmHoaDon.resx">
       <DependentUpon>FrmHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmNhaCungCap.resx">
+    <EmbeddedResource Include="View\FrmNhaCungCap.resx">
       <DependentUpon>FrmNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmNhanVien.resx">
+    <EmbeddedResource Include="View\FrmNhanVien.resx">
       <DependentUpon>FrmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPhieuNhap.resx">
+    <EmbeddedResource Include="View\FrmPhieuNhap.resx">
       <DependentUpon>FrmPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmThucDon.resx">
+    <EmbeddedResource Include="View\FrmThucDon.resx">
       <DependentUpon>FrmThucDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -139,6 +139,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
