@@ -60,3 +60,4 @@ C:\Users\MINHTAM\Desktop\codeform\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\
 C:\Users\MINHTAM\Desktop\NTPH\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\QuanLiQuanCOFFEE.exe.config
 C:\Users\MINHTAM\Desktop\NTPH\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.exe
 C:\Users\MINHTAM\Desktop\NTPH\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.pdb
+C:\Users\huyen\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmThucDon.resources
