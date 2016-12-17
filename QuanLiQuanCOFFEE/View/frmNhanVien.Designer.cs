@@ -50,6 +50,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lbNV = new System.Windows.Forms.Label();
             this.dgvNV = new System.Windows.Forms.DataGridView();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnTim = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNV)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +65,7 @@
             this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.btnThem);
+            this.panel1.Controls.Add(this.btnHuy);
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.textBox5);
             this.panel1.Controls.Add(this.textBox3);
@@ -74,9 +77,9 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(75, 64);
+            this.panel1.Location = new System.Drawing.Point(2, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(359, 377);
+            this.panel1.Size = new System.Drawing.Size(432, 377);
             this.panel1.TabIndex = 9;
             // 
             // dateTimePicker1
@@ -105,7 +108,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(102, 323);
+            this.btnSua.Location = new System.Drawing.Point(102, 339);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(64, 35);
             this.btnSua.TabIndex = 4;
@@ -114,7 +117,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(186, 323);
+            this.btnLuu.Location = new System.Drawing.Point(182, 339);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(64, 35);
             this.btnLuu.TabIndex = 4;
@@ -130,7 +133,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(18, 323);
+            this.btnThem.Location = new System.Drawing.Point(22, 339);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(64, 35);
             this.btnThem.TabIndex = 2;
@@ -139,7 +142,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(270, 323);
+            this.btnXoa.Location = new System.Drawing.Point(262, 339);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(64, 35);
             this.btnXoa.TabIndex = 3;
@@ -262,8 +265,26 @@
             this.dgvNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNV.Location = new System.Drawing.Point(471, 64);
             this.dgvNV.Name = "dgvNV";
-            this.dgvNV.Size = new System.Drawing.Size(425, 377);
+            this.dgvNV.Size = new System.Drawing.Size(425, 322);
             this.dgvNV.TabIndex = 6;
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Location = new System.Drawing.Point(342, 339);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(64, 35);
+            this.btnHuy.TabIndex = 3;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            // 
+            // btnTim
+            // 
+            this.btnTim.Location = new System.Drawing.Point(471, 403);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(64, 35);
+            this.btnTim.TabIndex = 3;
+            this.btnTim.Text = "Tìm kiếm";
+            this.btnTim.UseVisualStyleBackColor = true;
             // 
             // FrmNhanVien
             // 
@@ -274,6 +295,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lbNV);
             this.Controls.Add(this.dgvNV);
+            this.Controls.Add(this.btnTim);
             this.Name = "FrmNhanVien";
             this.Text = "frmNhanVien";
             this.Load += new System.EventHandler(this.FrmNhanVien_Load);
@@ -309,6 +331,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lbNV;
         private System.Windows.Forms.DataGridView dgvNV;
+        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnTim;
 
     }
 }

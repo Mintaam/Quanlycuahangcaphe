@@ -44,6 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connection.cs" />
+    <Compile Include="View\FrmBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmBan.Designer.cs">
+      <DependentUpon>FrmBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +62,12 @@
     </Compile>
     <Compile Include="View\frmChinh.Designer.cs">
       <DependentUpon>frmChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmGoiMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmGoiMon.Designer.cs">
+      <DependentUpon>FrmGoiMon.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FrmHangHoa.cs">
       <SubType>Form</SubType>
@@ -94,11 +107,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\FrmBan.resx">
+      <DependentUpon>FrmBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FrmDangNhap.resx">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmChinh.resx">
       <DependentUpon>frmChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmGoiMon.resx">
+      <DependentUpon>FrmGoiMon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmHangHoa.resx">
       <DependentUpon>FrmHangHoa.cs</DependentUpon>
