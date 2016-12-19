@@ -33,7 +33,7 @@
             this.txtNgayvaolam = new System.Windows.Forms.DateTimePicker();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnSua = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -60,7 +60,7 @@
             this.panel1.Controls.Add(this.txtNgayvaolam);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.btnSua);
-            this.panel1.Controls.Add(this.btnLuu);
+            this.panel1.Controls.Add(this.btnThoat);
             this.panel1.Controls.Add(this.txtSDT);
             this.panel1.Controls.Add(this.btnThem);
             this.panel1.Controls.Add(this.btnXoa);
@@ -112,14 +112,15 @@
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click_1);
             // 
-            // btnLuu
+            // btnThoat
             // 
-            this.btnLuu.Location = new System.Drawing.Point(277, 323);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(64, 35);
-            this.btnLuu.TabIndex = 4;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnThoat.Location = new System.Drawing.Point(277, 323);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(64, 35);
+            this.btnThoat.TabIndex = 4;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // txtSDT
             // 
@@ -294,7 +295,7 @@
         private System.Windows.Forms.DateTimePicker txtNgayvaolam;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;

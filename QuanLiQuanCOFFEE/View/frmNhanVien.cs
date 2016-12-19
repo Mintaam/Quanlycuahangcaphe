@@ -131,5 +131,14 @@ namespace QuanLiQuanCOFFEE
            }
 
        }
+
+       private void btnThoat_Click(object sender, EventArgs e)
+       {
+           DialogResult = MessageBox.Show("Bạn có muốn thoát không?", "thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+           if (DialogResult == DialogResult.OK)
+           {
+               Application.Exit();
+           }
+       }
     }
 }
