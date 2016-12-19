@@ -67,11 +67,11 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnThoat.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThoat.Location = new System.Drawing.Point(523, 392);
+            this.btnThoat.Location = new System.Drawing.Point(578, 392);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(139, 44);
+            this.btnThoat.Size = new System.Drawing.Size(84, 41);
             this.btnThoat.TabIndex = 3;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -103,7 +103,7 @@
             this.tabPage1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(689, 391);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thông tin Nhà Cung Cấp";
@@ -237,7 +237,7 @@
             this.tbcntt.Controls.Add(this.label10);
             this.tbcntt.Location = new System.Drawing.Point(4, 22);
             this.tbcntt.Name = "tbcntt";
-            this.tbcntt.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbcntt.Padding = new System.Windows.Forms.Padding(3);
             this.tbcntt.Size = new System.Drawing.Size(689, 391);
             this.tbcntt.TabIndex = 1;
             this.tbcntt.Text = "Cập nhật thông tin";

@@ -101,7 +101,7 @@ namespace QuanLiQuanCOFFEE
            {
                SqlConnection kn = new SqlConnection(@"Data Source=HUYENNGO\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
-                sua = "update NHANVIEN set MaNV ='"+txtMaNV.Text+"',tenNV ='"+txtTenNv.Text+"',ChucVu = '"+txtChucvu.Text+"',NgayVaoLam ='"+txtNgayvaolam.Value+"',DiaChi = '"+txtDiachi.Text+"',Sdt= '"+txtSDT.Text+ "',[E-Mail] = '"+txtEmail.Text+"' where MaNV = '"+txtMaNV.Text+"'";
+                sua = "update NHANVIEN set TenNV ='"+txtTenNv.Text+"',ChucVu='"+txtChucvu.Text+"',NgayVaoLam ='"+txtNgayvaolam.Value+"',DiaChi ='"+txtDiachi.Text+"',Sdt='"+txtSDT.Text+ "',[E-Mail]='"+txtEmail.Text+"' where MaNV ='"+txtMaNV.Text+"'";
                 SqlCommand commandsua = new SqlCommand(sua, kn);
                 commandsua.ExecuteNonQuery();
                 ketnoi();
@@ -119,7 +119,7 @@ namespace QuanLiQuanCOFFEE
            {
                SqlConnection kn = new SqlConnection(@"Data Source=HUYENNGO\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
                kn.Open();
-               xoa = "delete NHANVIEN set MaNV='" + txtMaNV.Text + "',tenNV ='" + txtTenNv.Text + "',ChucVu = '" + txtChucvu.Text + "',NgayVaoLam ='" + txtNgayvaolam.Value + "',DiaChi ='" + txtDiachi.Text + "',Sdt= '" + txtSDT.Text +"',[E-Mail]= '" +txtEmail.Text+ "' where MaNV='" + txtMaNV.Text + "'";
+               xoa = "delete FROM NHANVIEN WHERE MaNV ='" + txtMaNV.Text + "'";// +"',TenNV='" + txtTenNv.Text + "',ChucVu= '" + txtChucvu.Text + "',NgayVaoLam='" + txtNgayvaolam.Value + "',DiaChi='" + txtDiachi.Text + "',Sdt='" + txtSDT.Text + "',[E-Mail]='" + txtEmail.Text + "'where MaNV='" + txtMaNV.Text + "'";
                SqlCommand commandxoa = new SqlCommand(xoa, kn);
                commandxoa.ExecuteNonQuery();
                ketnoi();
