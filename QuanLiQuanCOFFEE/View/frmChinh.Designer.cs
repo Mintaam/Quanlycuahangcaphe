@@ -36,9 +36,12 @@
             this.tênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mãNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhàCungCấpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.thựcĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phiếuNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hóaĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bànToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gọiMónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btAdd = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -49,31 +52,12 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btToTal = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.thựcĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bànToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gọiMónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -102,14 +86,14 @@
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng Nhập";
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
@@ -129,21 +113,27 @@
             // tênToolStripMenuItem
             // 
             this.tênToolStripMenuItem.Name = "tênToolStripMenuItem";
-            this.tênToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tênToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.tênToolStripMenuItem.Text = "Nhân viên";
             this.tênToolStripMenuItem.Click += new System.EventHandler(this.tênToolStripMenuItem_Click);
             // 
             // mãNhânViênToolStripMenuItem
             // 
             this.mãNhânViênToolStripMenuItem.Name = "mãNhânViênToolStripMenuItem";
-            this.mãNhânViênToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mãNhânViênToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.mãNhânViênToolStripMenuItem.Text = "Hàng hóa";
             // 
             // nhàCungCấpToolStripMenuItem1
             // 
             this.nhàCungCấpToolStripMenuItem1.Name = "nhàCungCấpToolStripMenuItem1";
-            this.nhàCungCấpToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.nhàCungCấpToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
             this.nhàCungCấpToolStripMenuItem1.Text = "Nhà cung cấp";
+            // 
+            // thựcĐơnToolStripMenuItem
+            // 
+            this.thựcĐơnToolStripMenuItem.Name = "thựcĐơnToolStripMenuItem";
+            this.thựcĐơnToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.thựcĐơnToolStripMenuItem.Text = "Thực đơn";
             // 
             // quảnLýToolStripMenuItem
             // 
@@ -159,14 +149,26 @@
             // phiếuNhậpToolStripMenuItem
             // 
             this.phiếuNhậpToolStripMenuItem.Name = "phiếuNhậpToolStripMenuItem";
-            this.phiếuNhậpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.phiếuNhậpToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.phiếuNhậpToolStripMenuItem.Text = "Phiếu Nhập";
             // 
             // hóaĐơnToolStripMenuItem
             // 
             this.hóaĐơnToolStripMenuItem.Name = "hóaĐơnToolStripMenuItem";
-            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.hóaĐơnToolStripMenuItem.Text = "Hóa Đơn";
+            // 
+            // bànToolStripMenuItem
+            // 
+            this.bànToolStripMenuItem.Name = "bànToolStripMenuItem";
+            this.bànToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.bànToolStripMenuItem.Text = "Bàn";
+            // 
+            // gọiMónToolStripMenuItem
+            // 
+            this.gọiMónToolStripMenuItem.Name = "gọiMónToolStripMenuItem";
+            this.gọiMónToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.gọiMónToolStripMenuItem.Text = "Gọi món";
             // 
             // panel2
             // 
@@ -271,16 +273,6 @@
             this.btToTal.Text = "Thanh toán";
             this.btToTal.UseVisualStyleBackColor = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 25);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Danh sách Bàn";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -291,166 +283,12 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "ORDER";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 77);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(283, 350);
-            this.dataGridView1.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(321, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 25);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Thông tin Bàn";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnLuu);
-            this.panel1.Controls.Add(this.btnXoa);
-            this.panel1.Controls.Add(this.btnSua);
-            this.panel1.Controls.Add(this.btnThem);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(298, 77);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(241, 351);
-            this.panel1.TabIndex = 7;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Location = new System.Drawing.Point(146, 296);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(67, 31);
-            this.btnLuu.TabIndex = 6;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(25, 296);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(67, 31);
-            this.btnXoa.TabIndex = 6;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnSua
-            // 
-            this.btnSua.Location = new System.Drawing.Point(146, 215);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(67, 31);
-            this.btnSua.TabIndex = 6;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(25, 215);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(67, 31);
-            this.btnThem.TabIndex = 6;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(15, 123);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 20);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Trạng thái";
-            this.label6.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(104, 122);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(123, 21);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(104, 80);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(123, 20);
-            this.textBox2.TabIndex = 0;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 78);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 20);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Tên bàn";
-            this.label5.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(104, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(123, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 37);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 20);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Mã bàn";
-            this.label4.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // thựcĐơnToolStripMenuItem
-            // 
-            this.thựcĐơnToolStripMenuItem.Name = "thựcĐơnToolStripMenuItem";
-            this.thựcĐơnToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.thựcĐơnToolStripMenuItem.Text = "Thực đơn";
-            // 
-            // bànToolStripMenuItem
-            // 
-            this.bànToolStripMenuItem.Name = "bànToolStripMenuItem";
-            this.bànToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.bànToolStripMenuItem.Text = "Bàn";
-            // 
-            // gọiMónToolStripMenuItem
-            // 
-            this.gọiMónToolStripMenuItem.Name = "gọiMónToolStripMenuItem";
-            this.gọiMónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.gọiMónToolStripMenuItem.Text = "Gọi món";
-            // 
             // frmchinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 514);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -465,9 +303,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -494,23 +329,9 @@
         private System.Windows.Forms.ToolStripMenuItem quảnLýToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem phiếuNhậpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hóaĐơnToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.ToolStripMenuItem thựcĐơnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bànToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gọiMónToolStripMenuItem;
