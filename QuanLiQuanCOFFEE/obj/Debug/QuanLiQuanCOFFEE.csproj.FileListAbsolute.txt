@@ -149,3 +149,21 @@ C:\Users\Minh Tam\Desktop\form\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\Qua
 C:\Users\Minh Tam\Desktop\form\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmThucDon.resources
 C:\Users\Minh Tam\Desktop\form\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.Properties.Resources.resources
 C:\Users\Minh Tam\Desktop\form\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\QuanLiQuanCOFFEE.exe.config
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.exe
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.pdb
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmBan.resources
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.Frmorder.resources
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmDangNhap.resources
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.frmchinh.resources
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmHangHoa.resources
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmHoaDon.resources
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmNhaCungCap.resources
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmNhanVien.resources
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmPhieuNhap.resources
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmThucDon.resources
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.Properties.Resources.resources
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\QuanLiQuanCOFFEE.exe
+C:\Users\admin\Desktop\fmhh\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\QuanLiQuanCOFFEE.pdb
