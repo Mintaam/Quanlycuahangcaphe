@@ -226,7 +226,7 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(17, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 19);
+            this.label2.Size = new System.Drawing.Size(109, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên Nhân Viên";
             // 
@@ -236,7 +236,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(17, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 19);
+            this.label1.Size = new System.Drawing.Size(107, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Nhân Viên";
             // 
@@ -246,7 +246,7 @@
             this.label8.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(564, 30);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(258, 31);
+            this.label8.Size = new System.Drawing.Size(259, 31);
             this.label8.TabIndex = 8;
             this.label8.Text = "Danh sách nhân viên";
             // 
@@ -256,7 +256,7 @@
             this.lbNV.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNV.Location = new System.Drawing.Point(129, 30);
             this.lbNV.Name = "lbNV";
-            this.lbNV.Size = new System.Drawing.Size(230, 31);
+            this.lbNV.Size = new System.Drawing.Size(229, 31);
             this.lbNV.TabIndex = 7;
             this.lbNV.Text = "Quản lý nhân viên";
             // 
@@ -267,6 +267,7 @@
             this.dgvNV.Name = "dgvNV";
             this.dgvNV.Size = new System.Drawing.Size(425, 377);
             this.dgvNV.TabIndex = 6;
+            this.dgvNV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNV_CellContentClick);
             this.dgvNV.Click += new System.EventHandler(this.dgvNV_Click);
             // 
             // FrmNhanVien

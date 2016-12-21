@@ -20,7 +20,7 @@ namespace QuanLiQuanCOFFEE
         {
             try
             {
-                SqlConnection kn = new SqlConnection(@"Data Source=HUYENNGO\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
+                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
                 string sql = "select *from NHANVIEN";
                 SqlCommand commandsql = new SqlCommand(sql, kn);
@@ -35,7 +35,7 @@ namespace QuanLiQuanCOFFEE
             }
             finally
             {
-                SqlConnection kn = new SqlConnection(@"Data Source=HUYENNGO\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
+                SqlConnection kn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Close();
             }
         }
@@ -80,7 +80,7 @@ namespace QuanLiQuanCOFFEE
        {
            try
            {
-               SqlConnection kn = new SqlConnection(@"Data Source=HUYENNGO\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
+               SqlConnection kn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
                kn.Open();
                them = "INSERT INTO NHANVIEN (MaNV,TenNV,ChucVu,NgayVaoLam,Diachi,Sdt,[E-Mail])VALUES('" +txtMaNV.Text+ "','" +txtTenNv.Text+ "','" +txtChucvu.Text+ "','" +txtNgayvaolam.Value+ "','" +txtDiachi.Text+ "','" +txtSDT.Text+ "','" +txtEmail.Text+ "')";
                SqlCommand commandthem = new SqlCommand(them, kn);
@@ -99,7 +99,7 @@ namespace QuanLiQuanCOFFEE
        {
            try
            {
-               SqlConnection kn = new SqlConnection(@"Data Source=HUYENNGO\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
+               SqlConnection kn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
                 sua = "update NHANVIEN set MaNV ='"+txtMaNV.Text+"',tenNV ='"+txtTenNv.Text+"',ChucVu = '"+txtChucvu.Text+"',NgayVaoLam ='"+txtNgayvaolam.Value+"',DiaChi = '"+txtDiachi.Text+"',Sdt= '"+txtSDT.Text+ "',[E-Mail] = '"+txtEmail.Text+"' where MaNV = '"+txtMaNV.Text+"'";
                 SqlCommand commandsua = new SqlCommand(sua, kn);
@@ -117,7 +117,7 @@ namespace QuanLiQuanCOFFEE
        {
            try
            {
-               SqlConnection kn = new SqlConnection(@"Data Source=HUYENNGO\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
+               SqlConnection kn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
                kn.Open();
                xoa = "delete NHANVIEN set MaNV='" + txtMaNV.Text + "',tenNV ='" + txtTenNv.Text + "',ChucVu = '" + txtChucvu.Text + "',NgayVaoLam ='" + txtNgayvaolam.Value + "',DiaChi ='" + txtDiachi.Text + "',Sdt= '" + txtSDT.Text +"',[E-Mail]= '" +txtEmail.Text+ "' where MaNV='" + txtMaNV.Text + "'";
                SqlCommand commandxoa = new SqlCommand(xoa, kn);
@@ -139,6 +139,11 @@ namespace QuanLiQuanCOFFEE
            {
                Application.Exit();
            }
+       }
+
+       private void dgvNV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+       {
+
        }
     }
 }

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLiQuanCOFFEE.View
+namespace QuanLiQuanCOFFEE
 {
-    public partial class FrmBan : Form
+    public partial class Frmorder : Form
     {
-        public FrmBan()
+        public Frmorder()
         {
             InitializeComponent();
         }

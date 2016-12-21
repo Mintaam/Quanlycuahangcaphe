@@ -1,4 +1,4 @@
-﻿namespace QuanLiQuanCOFFEE.View
+﻿namespace QuanLiQuanCOFFEE
 {
     partial class FrmBan
     {
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.cbbTrangThaiBan = new System.Windows.Forms.ComboBox();
             this.txtTenBan = new System.Windows.Forms.TextBox();
             this.txtMaBan = new System.Windows.Forms.TextBox();
-            this.cbbTrangThaiBan = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
@@ -39,12 +39,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dgvBan = new System.Windows.Forms.DataGridView();
-            this.lbNV = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbNV = new System.Windows.Forms.Label();
+            this.dgvBan = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBan)).BeginInit();
             this.SuspendLayout();
+            // 
+            // cbbTrangThaiBan
+            // 
+            this.cbbTrangThaiBan.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbbTrangThaiBan.FormattingEnabled = true;
+            this.cbbTrangThaiBan.Location = new System.Drawing.Point(104, 122);
+            this.cbbTrangThaiBan.Name = "cbbTrangThaiBan";
+            this.cbbTrangThaiBan.Size = new System.Drawing.Size(152, 21);
+            this.cbbTrangThaiBan.TabIndex = 0;
             // 
             // txtTenBan
             // 
@@ -60,15 +69,6 @@
             this.txtMaBan.Size = new System.Drawing.Size(152, 20);
             this.txtMaBan.TabIndex = 0;
             // 
-            // cbbTrangThaiBan
-            // 
-            this.cbbTrangThaiBan.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.cbbTrangThaiBan.FormattingEnabled = true;
-            this.cbbTrangThaiBan.Location = new System.Drawing.Point(104, 122);
-            this.cbbTrangThaiBan.Name = "cbbTrangThaiBan";
-            this.cbbTrangThaiBan.Size = new System.Drawing.Size(152, 21);
-            this.cbbTrangThaiBan.TabIndex = 0;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnSua);
@@ -81,10 +81,10 @@
             this.panel1.Controls.Add(this.cbbTrangThaiBan);
             this.panel1.Controls.Add(this.txtTenBan);
             this.panel1.Controls.Add(this.txtMaBan);
-            this.panel1.Location = new System.Drawing.Point(47, 84);
+            this.panel1.Location = new System.Drawing.Point(40, 86);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(359, 351);
-            this.panel1.TabIndex = 11;
+            this.panel1.TabIndex = 18;
             // 
             // btnSua
             // 
@@ -152,42 +152,42 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Mã bàn";
             // 
-            // dgvBan
+            // label1
             // 
-            this.dgvBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBan.Location = new System.Drawing.Point(461, 84);
-            this.dgvBan.Name = "dgvBan";
-            this.dgvBan.Size = new System.Drawing.Size(319, 350);
-            this.dgvBan.TabIndex = 10;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(518, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 31);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Danh sách bàn";
             // 
             // lbNV
             // 
             this.lbNV.AutoSize = true;
             this.lbNV.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNV.Location = new System.Drawing.Point(124, 34);
+            this.lbNV.Location = new System.Drawing.Point(117, 36);
             this.lbNV.Name = "lbNV";
             this.lbNV.Size = new System.Drawing.Size(179, 31);
-            this.lbNV.TabIndex = 12;
+            this.lbNV.TabIndex = 20;
             this.lbNV.Text = "Thông tin bàn";
             // 
-            // label1
+            // dgvBan
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(525, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 31);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Danh sách bàn";
+            this.dgvBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBan.Location = new System.Drawing.Point(454, 86);
+            this.dgvBan.Name = "dgvBan";
+            this.dgvBan.Size = new System.Drawing.Size(319, 350);
+            this.dgvBan.TabIndex = 17;
             // 
             // FrmBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(817, 520);
+            this.ClientSize = new System.Drawing.Size(812, 472);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbNV);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvBan);
             this.Name = "FrmBan";
             this.Text = "FrmBan";
@@ -201,19 +201,19 @@
 
         #endregion
 
+        private System.Windows.Forms.ComboBox cbbTrangThaiBan;
         private System.Windows.Forms.TextBox txtTenBan;
         private System.Windows.Forms.TextBox txtMaBan;
-        private System.Windows.Forms.ComboBox cbbTrangThaiBan;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dgvBan;
-        private System.Windows.Forms.Label lbNV;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbNV;
+        private System.Windows.Forms.DataGridView dgvBan;
     }
 }

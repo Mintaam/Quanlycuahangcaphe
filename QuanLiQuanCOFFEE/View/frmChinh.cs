@@ -17,25 +17,15 @@ namespace QuanLiQuanCOFFEE
             InitializeComponent();
         }
 
-        private void tênToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void frmchinh_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -62,5 +52,68 @@ namespace QuanLiQuanCOFFEE
         {
            
         }
+
+        private void NVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmNhanVien f = new FrmNhanVien();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void HHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmHangHoa f = new FrmHangHoa();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void NCCToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmNhaCungCap f = new FrmNhaCungCap();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void TDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmThucDon f = new FrmThucDon();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void PNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPhieuNhap f = new FrmPhieuNhap();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void HDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmHoaDon f = new FrmHoaDon();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void bànToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBan f = new FrmBan();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void OrderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frmorder f = new Frmorder();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+       
+      
+
+       
+
+      
     }
 }
