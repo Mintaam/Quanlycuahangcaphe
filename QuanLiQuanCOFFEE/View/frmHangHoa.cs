@@ -24,7 +24,7 @@ namespace QuanLiQuanCOFFEE
             {
                 SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
-                string sql = "select *from HANGHOA";
+                string sql = "select * from HANGHOA";
                 SqlCommand commandsql = new SqlCommand(sql, kn);
                 SqlDataAdapter com = new SqlDataAdapter(commandsql);
                 DataTable table = new DataTable();
@@ -146,6 +146,11 @@ namespace QuanLiQuanCOFFEE
             {
                 Application.Exit();
             }
+        }
+
+        private void dgvHH1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
     }
