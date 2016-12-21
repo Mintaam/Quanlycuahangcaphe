@@ -54,7 +54,7 @@
             this.quảnLýToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(486, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(868, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -136,28 +136,28 @@
             // PNToolStripMenuItem
             // 
             this.PNToolStripMenuItem.Name = "PNToolStripMenuItem";
-            this.PNToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.PNToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.PNToolStripMenuItem.Text = "Phiếu Nhập";
             this.PNToolStripMenuItem.Click += new System.EventHandler(this.PNToolStripMenuItem_Click);
             // 
             // HDToolStripMenuItem
             // 
             this.HDToolStripMenuItem.Name = "HDToolStripMenuItem";
-            this.HDToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.HDToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.HDToolStripMenuItem.Text = "Hóa Đơn";
             this.HDToolStripMenuItem.Click += new System.EventHandler(this.HDToolStripMenuItem_Click);
             // 
             // bànToolStripMenuItem
             // 
             this.bànToolStripMenuItem.Name = "bànToolStripMenuItem";
-            this.bànToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.bànToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.bànToolStripMenuItem.Text = "Bàn";
             this.bànToolStripMenuItem.Click += new System.EventHandler(this.bànToolStripMenuItem_Click);
             // 
             // OrderToolStripMenuItem
             // 
             this.OrderToolStripMenuItem.Name = "OrderToolStripMenuItem";
-            this.OrderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.OrderToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.OrderToolStripMenuItem.Text = "Gọi món";
             this.OrderToolStripMenuItem.Click += new System.EventHandler(this.OrderToolStripMenuItem_Click);
             // 
@@ -165,7 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 514);
+            this.ClientSize = new System.Drawing.Size(868, 514);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.Name = "frmchinh";
