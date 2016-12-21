@@ -19,7 +19,7 @@ namespace QuanLiQuanCOFFEE
         {
             try
             {
-                SqlConnection kn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
+                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
                 string sql = "select *from NHACUNGCAP";
                 SqlCommand commandsql = new SqlCommand(sql, kn);
@@ -34,7 +34,7 @@ namespace QuanLiQuanCOFFEE
             }
             finally
             {
-                SqlConnection kn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
+                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Close();
             }
         }
@@ -68,7 +68,7 @@ namespace QuanLiQuanCOFFEE
         {
             try
             {
-                SqlConnection kn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
+                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
                 them = "INSERT INTO NHACUNGCAP (MaNCC,TenNCC,Diachi,Sdt,[E-Mail])VALUES('" + txtMaNCC.Text + "','" + txtTenNCC.Text + "','" + txtDiachi.Text + "','" + txtSDT.Text + "','" + txtEmail.Text + "')";
                 SqlCommand commandthem = new SqlCommand(them, kn);
@@ -86,7 +86,7 @@ namespace QuanLiQuanCOFFEE
         {
             try
             {
-                SqlConnection kn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
+                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
                 sua = "update NCC set MaNCC ='" + txtMaNCC.Text + "',tenNV ='" + txtTenNCC.Text + txtDiachi.Text + "',Sdt= '" + txtSDT.Text + "',[E-Mail] = '" + txtEmail.Text + "' where MaNCC = '" + txtMaNCC.Text + "'";
                 SqlCommand commandsua = new SqlCommand(sua, kn);
@@ -104,9 +104,9 @@ namespace QuanLiQuanCOFFEE
         {
             try
             {
-                SqlConnection kn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
+                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
-                xoa = "delete NHANVIEN set MaNCC='" + txtMaNCC.Text + "',tenNCC ='" + txtTenNCC.Text + txtDiachi.Text + "',Sdt= '" + txtSDT.Text + "',[E-Mail]= '" + txtEmail.Text + "' where MaNCC='" + txtMaNCC.Text + "'";
+                xoa = "delete from NHACUNGCAP where MaNCC = '" + txtMaNCC.Text + "'";
                 SqlCommand commandxoa = new SqlCommand(xoa, kn);
                 commandxoa.ExecuteNonQuery();
                 ketnoi();

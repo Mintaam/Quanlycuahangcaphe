@@ -104,7 +104,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(102, 323);
+            this.btnSua.Location = new System.Drawing.Point(104, 323);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(64, 35);
             this.btnSua.TabIndex = 4;
@@ -114,7 +114,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(277, 323);
+            this.btnThoat.Location = new System.Drawing.Point(276, 323);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(64, 35);
             this.btnThoat.TabIndex = 4;
@@ -141,7 +141,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(195, 323);
+            this.btnXoa.Location = new System.Drawing.Point(190, 323);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(64, 35);
             this.btnXoa.TabIndex = 3;
