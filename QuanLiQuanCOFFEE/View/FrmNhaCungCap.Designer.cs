@@ -44,8 +44,8 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.txtTenNCC = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.lbNV = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbNV = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNCC)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -155,6 +155,7 @@
             this.btnSua.TabIndex = 65;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThoat
             // 
@@ -164,6 +165,7 @@
             this.btnThoat.TabIndex = 66;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click_1);
             // 
             // btnThem
             // 
@@ -173,6 +175,7 @@
             this.btnThem.TabIndex = 63;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
@@ -182,6 +185,7 @@
             this.btnXoa.TabIndex = 64;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // txtTenNCC
             // 
@@ -200,16 +204,6 @@
             this.label2.TabIndex = 62;
             this.label2.Text = "Tên nhà cung cấp";
             // 
-            // lbNV
-            // 
-            this.lbNV.AutoSize = true;
-            this.lbNV.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNV.Location = new System.Drawing.Point(58, 48);
-            this.lbNV.Name = "lbNV";
-            this.lbNV.Size = new System.Drawing.Size(273, 31);
-            this.lbNV.TabIndex = 67;
-            this.lbNV.Text = "Quản lý Nhà cung cấp";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -219,6 +213,16 @@
             this.label1.Size = new System.Drawing.Size(123, 19);
             this.label1.TabIndex = 61;
             this.label1.Text = "Mã nhà cung cấp";
+            // 
+            // lbNV
+            // 
+            this.lbNV.AutoSize = true;
+            this.lbNV.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNV.Location = new System.Drawing.Point(58, 48);
+            this.lbNV.Name = "lbNV";
+            this.lbNV.Size = new System.Drawing.Size(273, 31);
+            this.lbNV.TabIndex = 67;
+            this.lbNV.Text = "Quản lý Nhà cung cấp";
             // 
             // FrmNhaCungCap
             // 
