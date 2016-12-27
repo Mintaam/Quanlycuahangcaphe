@@ -32,8 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +53,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BAN.cs">
+      <DependentUpon>Quanlycaphe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHITIETHANGHOA.cs">
+      <DependentUpon>Quanlycaphe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHITIETHOADON.cs">
+      <DependentUpon>Quanlycaphe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHITIETPHIEUNHAP.cs">
+      <DependentUpon>Quanlycaphe.tt</DependentUpon>
+    </Compile>
     <Compile Include="FrmBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +76,42 @@
     </Compile>
     <Compile Include="FrmOrder.Designer.cs">
       <DependentUpon>FrmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HANGHOA.cs">
+      <DependentUpon>Quanlycaphe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HOADON.cs">
+      <DependentUpon>Quanlycaphe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NHACUNGCAP.cs">
+      <DependentUpon>Quanlycaphe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NHANVIEN.cs">
+      <DependentUpon>Quanlycaphe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PHIEUNHAP.cs">
+      <DependentUpon>Quanlycaphe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Quanlycaphe.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Quanlycaphe.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Quanlycaphe.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Quanlycaphe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Quanlycaphe.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Quanlycaphe.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TAIKHOAN.cs">
+      <DependentUpon>Quanlycaphe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="THUCDON.cs">
+      <DependentUpon>Quanlycaphe.tt</DependentUpon>
     </Compile>
     <Compile Include="View\FrmDangNhap.cs">
       <SubType>Form</SubType>
@@ -145,6 +202,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -154,6 +212,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EntityDeploy Include="Quanlycaphe.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Quanlycaphe.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Quanlycaphe.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Quanlycaphe.edmx</DependentUpon>
+      <LastGenOutput>Quanlycaphe.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Quanlycaphe.edmx.diagram">
+      <DependentUpon>Quanlycaphe.edmx</DependentUpon>
+    </None>
+    <None Include="Quanlycaphe.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Quanlycaphe.edmx</DependentUpon>
+      <LastGenOutput>Quanlycaphe.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -161,6 +236,9 @@
   <ItemGroup>
     <Folder Include="Controller\" />
     <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
