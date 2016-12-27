@@ -82,7 +82,7 @@ namespace QuanLiQuanCOFFEE
            {
                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                kn.Open();
-               them = "INSERT INTO NHANVIEN (MaNV,TenNV,ChucVu,NgayVaoLam,Diachi,Sdt,[E-Mail])VALUES('" +txtMaNV.Text+ "','" +txtTenNv.Text+ "','" +txtChucvu.Text+ "','" +txtNgayvaolam.Value+ "','" +txtDiachi.Text+ "','" +txtSDT.Text+ "','" +txtEmail.Text+ "')";
+               them = "INSERT INTO NHANVIEN (MaNV,TenNV,ChucVu,NgayVaoLam,Diachi,Sdt,[E-Mail])VALUES('" +txtMaNV.Text+ "','" +txtTenNv.Text+ "',N'" +txtChucvu.Text+ "',N'" +txtNgayvaolam.Value+ "','" +txtDiachi.Text+ "',N'" +txtSDT.Text+ "','" +txtEmail.Text+ "')";
                SqlCommand commandthem = new SqlCommand(them, kn);
                commandthem.ExecuteNonQuery();
                ketnoi();
