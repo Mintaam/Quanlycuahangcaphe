@@ -20,7 +20,7 @@ namespace QuanLiQuanCOFFEE
         {
             try
             {
-                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
+                SqlConnection kn = new SqlConnection(@"Data Source=HUYENNGO\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
                 string sql = "select *from NHANVIEN";
                 SqlCommand commandsql = new SqlCommand(sql, kn);

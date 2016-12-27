@@ -189,3 +189,9 @@ C:\Users\Minh Tam\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Deb
 C:\Users\Minh Tam\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Minh Tam\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\EntityFramework.xml
 C:\Users\Minh Tam\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\huyen\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\EntityFramework.dll
+C:\Users\huyen\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\huyen\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\EntityFramework.xml
+C:\Users\huyen\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\huyen\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.FrmBan.resources
+C:\Users\huyen\Desktop\New folder\Quanlycuahangcaphe\QuanLiQuanCOFFEE\obj\Debug\QuanLiQuanCOFFEE.Frmorder.resources
