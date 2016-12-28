@@ -20,7 +20,7 @@ namespace QuanLiQuanCOFFEE
         {
             try
             {
-                SqlConnection kn = new SqlConnection(@"Data Source=HUYENNGO\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
+                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
                 string sql = "select *from NHANVIEN";
                 SqlCommand commandsql = new SqlCommand(sql, kn);
@@ -39,21 +39,7 @@ namespace QuanLiQuanCOFFEE
                 kn.Close();
             }
         }
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void FrmNhanVien_Load(object sender, EventArgs e)
         {
             ketnoi();
@@ -82,7 +68,7 @@ namespace QuanLiQuanCOFFEE
            {
                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                kn.Open();
-               them = "INSERT INTO NHANVIEN (MaNV,TenNV,ChucVu,NgayVaoLam,Diachi,Sdt,[E-Mail])VALUES('" +txtMaNV.Text+ "','" +txtTenNv.Text+ "',N'" +txtChucvu.Text+ "',N'" +txtNgayvaolam.Value+ "','" +txtDiachi.Text+ "',N'" +txtSDT.Text+ "','" +txtEmail.Text+ "')";
+               them = "INSERT INTO NHANVIEN (MaNV,TenNV,ChucVu,NgayVaoLam,Diachi,Sdt,[E-Mail])VALUES('" + txtMaNV.Text+ "','" + txtTenNv.Text + "',N'" + txtChucvu.Text+ "',N'" +txtNgayvaolam.Value+ "','" + txtDiachi.Text+ "',N'" +txtSDT.Text+ "','" +txtEmail.Text+ "')";
                SqlCommand commandthem = new SqlCommand(them, kn);
                commandthem.ExecuteNonQuery();
                ketnoi();
