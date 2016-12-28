@@ -61,16 +61,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSTKHD.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FrmBan.cs">
+    <Compile Include="View\FrmBan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBan.Designer.cs">
+    <Compile Include="View\FrmBan.Designer.cs">
       <DependentUpon>FrmBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmOrder.cs">
+    <Compile Include="View\FrmOrder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmOrder.Designer.cs">
+    <Compile Include="View\FrmOrder.Designer.cs">
       <DependentUpon>FrmOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmThongKe.cs">
@@ -129,10 +129,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmBan.resx">
+    <EmbeddedResource Include="View\FrmBan.resx">
       <DependentUpon>FrmBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmOrder.resx">
+    <EmbeddedResource Include="View\FrmOrder.resx">
       <DependentUpon>FrmOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmThongKe.resx">

@@ -49,7 +49,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(340, 26);
+            this.label2.Location = new System.Drawing.Point(137, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 31);
             this.label2.TabIndex = 13;
@@ -58,7 +58,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.btToTal);
-            this.panel4.Location = new System.Drawing.Point(227, 366);
+            this.panel4.Location = new System.Drawing.Point(24, 349);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(355, 52);
             this.panel4.TabIndex = 12;
@@ -77,7 +77,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.listView1);
-            this.panel3.Location = new System.Drawing.Point(227, 120);
+            this.panel3.Location = new System.Drawing.Point(24, 103);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(356, 240);
             this.panel3.TabIndex = 11;
@@ -98,7 +98,7 @@
             this.panel2.Controls.Add(this.cbChoose);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Location = new System.Drawing.Point(227, 60);
+            this.panel2.Location = new System.Drawing.Point(24, 43);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(356, 54);
             this.panel2.TabIndex = 10;
@@ -159,13 +159,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 444);
+            this.ClientSize = new System.Drawing.Size(403, 417);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Name = "Frmorder";
             this.Text = "Frmorder";
+            this.Load += new System.EventHandler(this.Frmorder_Load);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

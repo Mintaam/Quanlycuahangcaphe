@@ -57,6 +57,7 @@
             this.dgvNCC.Name = "dgvNCC";
             this.dgvNCC.Size = new System.Drawing.Size(520, 377);
             this.dgvNCC.TabIndex = 46;
+            this.dgvNCC.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNCC_CellClick);
             // 
             // label8
             // 
