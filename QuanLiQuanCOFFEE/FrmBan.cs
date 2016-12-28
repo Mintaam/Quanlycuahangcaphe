@@ -17,11 +17,6 @@ namespace QuanLiQuanCOFFEE
         public FrmBan()
         {
             InitializeComponent();
-<<<<<<< HEAD
-           
-        }
-
-=======
             LoadBan();
         }
 
@@ -46,7 +41,7 @@ namespace QuanLiQuanCOFFEE
             }
             finally
             {
-                SqlConnection kn = new SqlConnection(@"Data Source=DESKTOP-R128S04\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
+                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Close();
             }
         }
@@ -56,13 +51,7 @@ namespace QuanLiQuanCOFFEE
 
         }
 
-        private void dgvBan_Click(object sender, EventArgs e)
-        {
-            int index = dgvBan.CurrentRow.Index;
-            txtMaBan.Text = dgvBan.Rows[index].Cells[0].Value.ToString();
-            txtTenBan.Text = dgvBan.Rows[index].Cells[1].Value.ToString();
-            cbbTrangThaiBan.Text = dgvBan.Rows[index].Cells[2].Value.ToString();
-        }
+      
 
         string Them;
         private void btnThem_Click(object sender, EventArgs e)
@@ -104,7 +93,7 @@ namespace QuanLiQuanCOFFEE
         string xoa;
         private void btnXoa_Click(object sender, EventArgs e)
         {
-             try
+            try
             {
                 SqlConnection kn = new SqlConnection(@"Data Source=DESKTOP-R128S04\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
@@ -141,13 +130,16 @@ namespace QuanLiQuanCOFFEE
             cbbTrangThaiBan.ValueMember = "TrangThaiBan";
         }
 
->>>>>>> 1fe019a7c67a6018dfc2c9e0d21478c11205337c
+        private void dgvBan_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = dgvBan.CurrentRow.Index;
+            txtMaBan.Text = dgvBan.Rows[index].Cells[0].Value.ToString();
+            txtTenBan.Text = dgvBan.Rows[index].Cells[1].Value.ToString();
+            cbbTrangThaiBan.Text = dgvBan.Rows[index].Cells[2].Value.ToString();
+        }
+
+
+
+
     }
-
-
-
-
-
-
-
 }
