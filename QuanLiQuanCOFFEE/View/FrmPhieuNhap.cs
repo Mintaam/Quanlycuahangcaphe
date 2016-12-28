@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 
 namespace QuanLiQuanCOFFEE
 {
@@ -16,10 +16,19 @@ namespace QuanLiQuanCOFFEE
         public FrmPhieuNhap()
         {
             InitializeComponent();
-           // loadPhieuNhap();
-            //loadChitietPN();
+            loadPhieuNhap();
+            loadChitietPN();
         }
-        /*private void loadPhieuNhap()
+
+
+        private void FrmPhieuNhap_Load(object sender, EventArgs e)
+        {
+            loadPhieuNhap();
+            LoadcbbNhanVien();
+            LoadcbbHangHoa();
+            LoadcbbPhieuNhap();
+        }
+        private void loadPhieuNhap()
         {
             try
             {
@@ -67,22 +76,81 @@ namespace QuanLiQuanCOFFEE
                 kn.Close();
             }
         }
+       
 
+
+         private void dgvPN1_CellClick(object sender, DataGridViewCellEventArgs e)
+         {
+             int index = dgvPN1.CurrentRow.Index;
+
+             txtMaPN1.Text = dgvPN1.Rows[index].Cells[0].Value.ToString();
+             cbMaNV1.Text = dgvPN1.Rows[index].Cells[1].Value.ToString();
+             txtNgaylap.Text = dgvPN1.Rows[index].Cells[2].Value.ToString();
+         }
+
+         private void dgvPN2_CellClick(object sender, DataGridViewCellEventArgs e)
+         {
+             int index = dgvPN2.CurrentRow.Index;
+             cbMaPN2.Text = dgvPN2.Rows[index].Cells[0].Value.ToString();
+             cbMaHH2.Text = dgvPN2.Rows[index].Cells[1].Value.ToString();
+             txtSoLuong.Text = dgvPN2.Rows[index].Cells[2].Value.ToString();
+             txtDonGia.Text = dgvPN2.Rows[index].Cells[3].Value.ToString();
+         }
 
 
         
-        string them;
 
-        private void btnThem1_Click(object sender, EventArgs e)
+        private void LoadcbbNhanVien()
+         {
+             SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
+             kn.Open();
+             SqlDataAdapter da = new SqlDataAdapter("SELECT DISTINCT * FROM NHANVIEN", kn);
+             DataTable table = new DataTable();
+             da.Fill(table);
+             da.Dispose();
+             cbMaNV1.DataSource = table;
+             cbMaNV1.ValueMember = "MaNV";
+             kn.Close();
+         }
+
+
+
+        private void LoadcbbHangHoa()// load 
+        {
+            SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
+            kn.Open();
+            SqlDataAdapter da = new SqlDataAdapter("SELECT DISTINCT * FROM HANGHOA", kn);
+            DataTable table = new DataTable();
+            da.Fill(table);
+            da.Dispose();
+            cbMaHH2.DataSource = table;
+            cbMaHH2.ValueMember = "MaHH";
+            kn.Close();
+        }
+
+        private void LoadcbbPhieuNhap()
+        {
+            SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
+            kn.Open();
+            SqlDataAdapter da = new SqlDataAdapter("SELECT DISTINCT * FROM PHIEUNHAP", kn);
+            DataTable table = new DataTable();
+            da.Fill(table);
+            da.Dispose();
+            cbMaPN2.DataSource = table;
+            cbMaPN2.ValueMember = "MaPN";
+            kn.Close();
+        }
+
+        private void btnThem1_Click_1(object sender, EventArgs e)
         {
             try
             {
                 SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
-                them = "INSERT INTO PHIEUNHAP (MaPN,MaNV,NgayNhap)VALUES('" + cbMaPN1.Text + "','" + cbMaNV1.Text + "',N'" + txtNgaylap.Value + "')";
+                string them = "INSERT INTO PHIEUNHAP (MaPN,MaNV,NgayNhap)VALUES('" + txtMaPN1.Text + "','" + cbMaNV1.Text + "',N'" + txtNgaylap.Value + "')";
                 SqlCommand commandthem = new SqlCommand(them, kn);
                 commandthem.ExecuteNonQuery();
-                loadChitietPN();
+                loadPhieuNhap();
 
             }
             catch (SqlException ex)
@@ -91,14 +159,13 @@ namespace QuanLiQuanCOFFEE
             }
         }
 
-        string sua1;
-        private void btnSua1_Click(object sender, EventArgs e)
+        private void btnSua1_Click_1(object sender, EventArgs e)
         {
             try
             {
                 SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
-                sua1 = "update PHIEUNHAP set TenPN = N'" + cbMaPN1.Text + "',LoaiHH = '" + cbMaNV1.Text + "' where MaPN1 ='" + cbMaPN2.Text + "'";
+                string sua1 = "update PHIEUNHAP set TenPN = N'" + txtMaPN1.Text + "',LoaiHH = '" + cbMaNV1.Text + "' where MaPN1 ='" + cbMaPN2.Text + "'";
                 SqlCommand commandsua1 = new SqlCommand(sua1, kn);
                 commandsua1.ExecuteNonQuery();
                 loadPhieuNhap();
@@ -110,15 +177,13 @@ namespace QuanLiQuanCOFFEE
             }
         }
 
-
-        string xoa1;
         private void btnXoa1_Click(object sender, EventArgs e)
         {
             try
             {
                 SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
-                xoa1 = "delete from PHIEUNHAP where MaPN = '" + cbMaPN1.Text + "'";
+                string xoa1 = "delete from PHIEUNHAP where MaPN = '" + txtMaPN1.Text + "'";
                 SqlCommand commandxoa1 = new SqlCommand(xoa1, kn);
                 commandxoa1.ExecuteNonQuery();
                 loadPhieuNhap();
@@ -130,7 +195,7 @@ namespace QuanLiQuanCOFFEE
             }
         }
 
-        private void btnThoat1_Click(object sender, EventArgs e)
+        private void btnThoat1_Click_1(object sender, EventArgs e)
         {
             DialogResult = MessageBox.Show("Bạn có muốn thoát không?", "thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (DialogResult == DialogResult.OK)
@@ -139,80 +204,70 @@ namespace QuanLiQuanCOFFEE
             }
         }
 
-         private void dgvHH1_Click_1(object sender, EventArgs e)
+        private void btnThem2_Click(object sender, EventArgs e)
         {
-            int index = dgvPN1.CurrentRow.Index;
-            cbMaPN1.Text = dgvPN1.Rows[index].Cells[0].Value.ToString();
-            cbMaNV1.Text = dgvPN1.Rows[index].Cells[1].Value.ToString();
-            txtNgaylap.Text = dgvPN1.Rows[index].Cells[2].Value.ToString();
-        }
-
-         private void LoadComboxPN()// load 
-         {
-             SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
-             kn.Open();
-             SqlDataAdapter da = new SqlDataAdapter("SELECT DISTINCT * FROM PHIEUNHAP", kn);
-             DataTable table = new DataTable();
-             da.Fill(table);
-             da.Dispose();
-             cbMaPN1.DataSource = table;
-             cbMaPN1.ValueMember = "MaPN";
-         }
-
-        private void LoadComboxNV()
-         {
-             SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
-             kn.Open();
-             SqlDataAdapter da = new SqlDataAdapter("SELECT DISTINCT * FROM NHANVIEN", kn);
-             DataTable table = new DataTable();
-             da.Fill(table);
-             da.Dispose();
-             cbMaNV1.DataSource = table;
-             cbMaNV1.ValueMember = "MaNV";
-
-
-
-
-         }
-
-        private void FrmPhieuNhap_Load_1(object sender, EventArgs e)
-        {
-            loadPhieuNhap();
-            LoadComboxPN();
-            LoadComboxNV();
-        }*/
-
-
-         private void LoadPNhap()
-        {
-            using ( var db = new qlBHEntities())
+            try
             {
-                var CT = from PN in db.PHIEUNHAPs
-                         orderby PN.MaPN
-                         select new
-                         {
-                             cbMaPN1 = PN.MaPN,
-                             cbMaNV1 = PN.MaNV,
-                             txtNgaylap = PN.NgayNhap.Value,
-                         };
-                dgvPN1.DataSource = CT.ToList();
+                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
+                kn.Open();
+                string them = "INSERT INTO CHITIETPHIEUNHAP (MaPN,MaHH,SoLuong,DonGia)VALUES('" + cbMaPN2.Text + "','" + cbMaHH2.Text + "','" + txtSoLuong.Text + "' , '" + txtDonGia.Text + "')";
+                SqlCommand commandthem = new SqlCommand(them, kn);
+                commandthem.ExecuteNonQuery();
+                loadChitietPN();
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
-        private void LoadComboboxMaPN()
+        private void btnSua2_Click(object sender, EventArgs e)
         {
-            var LoadMaPN = new qlBHEntities();
-            
-            
+            try
+            {
+                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
+                kn.Open();
+                string sua1 = "update PHIEUNHAP set MaPN = N'" + cbMaPN2.Text + "','" + cbMaHH2.Text + "',N'" + txtDonGia.Text + txtSoLuong.Text + "')";
+                SqlCommand commandsua1 = new SqlCommand(sua1, kn);
+                commandsua1.ExecuteNonQuery();
+                loadChitietPN();
+            }
+            catch (SqlException ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
-        private void FrmPhieuNhap_Load(object sender, EventArgs e)
+
+        private void btnXoa2_Click(object sender, EventArgs e)
         {
-            qlBHEntities db = new qlBHEntities();
-            LoadPNhap();
+            try
+            {
+                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
+                kn.Open();
+                string xoa1 = "delete from PHIEUNHAP where MaPN = '" + cbMaPN2.Text + "'";
+                SqlCommand commandxoa1 = new SqlCommand(xoa1, kn);
+                commandxoa1.ExecuteNonQuery();
+                loadChitietPN();
+            }
+            catch (SqlException ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
+       
+
+       
+
+        
+
+      
 
 
+        
 
 
 

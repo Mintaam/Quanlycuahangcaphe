@@ -53,18 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BAN.cs">
-      <DependentUpon>Quanlycaphe.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CHITIETHANGHOA.cs">
-      <DependentUpon>Quanlycaphe.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CHITIETHOADON.cs">
-      <DependentUpon>Quanlycaphe.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CHITIETPHIEUNHAP.cs">
-      <DependentUpon>Quanlycaphe.tt</DependentUpon>
-    </Compile>
     <Compile Include="FrmBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,42 +64,6 @@
     </Compile>
     <Compile Include="FrmOrder.Designer.cs">
       <DependentUpon>FrmOrder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HANGHOA.cs">
-      <DependentUpon>Quanlycaphe.tt</DependentUpon>
-    </Compile>
-    <Compile Include="HOADON.cs">
-      <DependentUpon>Quanlycaphe.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NHACUNGCAP.cs">
-      <DependentUpon>Quanlycaphe.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NHANVIEN.cs">
-      <DependentUpon>Quanlycaphe.tt</DependentUpon>
-    </Compile>
-    <Compile Include="PHIEUNHAP.cs">
-      <DependentUpon>Quanlycaphe.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Quanlycaphe.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Quanlycaphe.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Quanlycaphe.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Quanlycaphe.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Quanlycaphe.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Quanlycaphe.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="TAIKHOAN.cs">
-      <DependentUpon>Quanlycaphe.tt</DependentUpon>
-    </Compile>
-    <Compile Include="THUCDON.cs">
-      <DependentUpon>Quanlycaphe.tt</DependentUpon>
     </Compile>
     <Compile Include="View\FrmDangNhap.cs">
       <SubType>Form</SubType>
@@ -212,23 +164,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EntityDeploy Include="Quanlycaphe.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Quanlycaphe.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Quanlycaphe.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Quanlycaphe.edmx</DependentUpon>
-      <LastGenOutput>Quanlycaphe.Context.cs</LastGenOutput>
-    </None>
-    <None Include="Quanlycaphe.edmx.diagram">
-      <DependentUpon>Quanlycaphe.edmx</DependentUpon>
-    </None>
-    <None Include="Quanlycaphe.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Quanlycaphe.edmx</DependentUpon>
-      <LastGenOutput>Quanlycaphe.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -140,7 +140,7 @@ namespace QuanLiQuanCOFFEE
             {
                 SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
-                sua = "update CHITIETHANGHOA set MaNCC ='" + cbMaNCC.Text + "',MaHH ='" +cbMaHH.Text + "',SoLuong ='" + txtSoLuong.Text+ "', DonGia = '" + txtDonGia.Text + "' where MaHH = '" + cbMaHH.Text + "'";
+                sua = "update CHITIETHANGHOA set MaNCC ='" + cbMaNCC.Text + "',MaHH ='" + cbMaHH.Text + "',SoLuong ='" + txtSoLuong.Text+ "', DonGia = '" + txtDonGia.Text + "' where MaHH = '" + cbMaHH.Text + "'";
                 SqlCommand commandsua = new SqlCommand(sua, kn);
                 commandsua.ExecuteNonQuery();
                 loadChitietHH();

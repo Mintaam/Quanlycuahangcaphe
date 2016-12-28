@@ -34,7 +34,6 @@
             this.lbNV = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbMaNV1 = new System.Windows.Forms.ComboBox();
-            this.cbMaPN1 = new System.Windows.Forms.ComboBox();
             this.txtNgaylap = new System.Windows.Forms.DateTimePicker();
             this.btnSua1 = new System.Windows.Forms.Button();
             this.btnThoat1 = new System.Windows.Forms.Button();
@@ -61,6 +60,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.dgvPN2 = new System.Windows.Forms.DataGridView();
+            this.txtMaPN1 = new System.Windows.Forms.TextBox();
             this.QuảnlýPN.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -116,8 +116,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtMaPN1);
             this.panel1.Controls.Add(this.cbMaNV1);
-            this.panel1.Controls.Add(this.cbMaPN1);
             this.panel1.Controls.Add(this.txtNgaylap);
             this.panel1.Controls.Add(this.btnSua1);
             this.panel1.Controls.Add(this.btnThoat1);
@@ -139,14 +139,6 @@
             this.cbMaNV1.Size = new System.Drawing.Size(161, 21);
             this.cbMaNV1.TabIndex = 57;
             // 
-            // cbMaPN1
-            // 
-            this.cbMaPN1.FormattingEnabled = true;
-            this.cbMaPN1.Location = new System.Drawing.Point(153, 28);
-            this.cbMaPN1.Name = "cbMaPN1";
-            this.cbMaPN1.Size = new System.Drawing.Size(161, 21);
-            this.cbMaPN1.TabIndex = 58;
-            // 
             // txtNgaylap
             // 
             this.txtNgaylap.CustomFormat = "dd/MM/yy";
@@ -164,6 +156,7 @@
             this.btnSua1.TabIndex = 35;
             this.btnSua1.Text = "Sửa";
             this.btnSua1.UseVisualStyleBackColor = true;
+            this.btnSua1.Click += new System.EventHandler(this.btnSua1_Click_1);
             // 
             // btnThoat1
             // 
@@ -173,6 +166,7 @@
             this.btnThoat1.TabIndex = 36;
             this.btnThoat1.Text = "Thoát";
             this.btnThoat1.UseVisualStyleBackColor = true;
+            this.btnThoat1.Click += new System.EventHandler(this.btnThoat1_Click_1);
             // 
             // btnThem1
             // 
@@ -182,6 +176,7 @@
             this.btnThem1.TabIndex = 33;
             this.btnThem1.Text = "Thêm";
             this.btnThem1.UseVisualStyleBackColor = true;
+            this.btnThem1.Click += new System.EventHandler(this.btnThem1_Click_1);
             // 
             // btnXoa1
             // 
@@ -191,6 +186,7 @@
             this.btnXoa1.TabIndex = 34;
             this.btnXoa1.Text = "Xóa";
             this.btnXoa1.UseVisualStyleBackColor = true;
+            this.btnXoa1.Click += new System.EventHandler(this.btnXoa1_Click);
             // 
             // label3
             // 
@@ -234,6 +230,7 @@
             this.dgvPN1.RowTemplate.Height = 28;
             this.dgvPN1.Size = new System.Drawing.Size(424, 392);
             this.dgvPN1.TabIndex = 20;
+            this.dgvPN1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPN1_CellClick);
             // 
             // tabPage2
             // 
@@ -291,7 +288,7 @@
             // cbMaHH2
             // 
             this.cbMaHH2.FormattingEnabled = true;
-            this.cbMaHH2.Location = new System.Drawing.Point(154, 84);
+            this.cbMaHH2.Location = new System.Drawing.Point(154, 75);
             this.cbMaHH2.Name = "cbMaHH2";
             this.cbMaHH2.Size = new System.Drawing.Size(161, 21);
             this.cbMaHH2.TabIndex = 56;
@@ -306,14 +303,14 @@
             // 
             // txtSoLuong
             // 
-            this.txtSoLuong.Location = new System.Drawing.Point(154, 191);
+            this.txtSoLuong.Location = new System.Drawing.Point(154, 120);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(163, 20);
             this.txtSoLuong.TabIndex = 55;
             // 
             // txtDonGia
             // 
-            this.txtDonGia.Location = new System.Drawing.Point(154, 138);
+            this.txtDonGia.Location = new System.Drawing.Point(154, 164);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(163, 20);
             this.txtDonGia.TabIndex = 54;
@@ -326,6 +323,7 @@
             this.btnSua2.TabIndex = 35;
             this.btnSua2.Text = "Sửa";
             this.btnSua2.UseVisualStyleBackColor = true;
+            this.btnSua2.Click += new System.EventHandler(this.btnSua2_Click);
             // 
             // btnThoat2
             // 
@@ -344,6 +342,7 @@
             this.btnThem2.TabIndex = 33;
             this.btnThem2.Text = "Thêm";
             this.btnThem2.UseVisualStyleBackColor = true;
+            this.btnThem2.Click += new System.EventHandler(this.btnThem2_Click);
             // 
             // btnXoa2
             // 
@@ -353,12 +352,13 @@
             this.btnXoa2.TabIndex = 34;
             this.btnXoa2.Text = "Xóa";
             this.btnXoa2.UseVisualStyleBackColor = true;
+            this.btnXoa2.Click += new System.EventHandler(this.btnXoa2_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(22, 140);
+            this.label8.Location = new System.Drawing.Point(32, 165);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(62, 19);
@@ -369,7 +369,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.Location = new System.Drawing.Point(22, 195);
+            this.label9.Location = new System.Drawing.Point(32, 121);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(69, 19);
@@ -380,7 +380,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.Location = new System.Drawing.Point(22, 85);
+            this.label10.Location = new System.Drawing.Point(32, 77);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(101, 19);
@@ -391,7 +391,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label15.Location = new System.Drawing.Point(22, 30);
+            this.label15.Location = new System.Drawing.Point(32, 30);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(110, 19);
@@ -407,6 +407,14 @@
             this.dgvPN2.RowTemplate.Height = 28;
             this.dgvPN2.Size = new System.Drawing.Size(424, 408);
             this.dgvPN2.TabIndex = 24;
+            this.dgvPN2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPN2_CellClick);
+            // 
+            // txtMaPN1
+            // 
+            this.txtMaPN1.Location = new System.Drawing.Point(153, 29);
+            this.txtMaPN1.Name = "txtMaPN1";
+            this.txtMaPN1.Size = new System.Drawing.Size(163, 20);
+            this.txtMaPN1.TabIndex = 58;
             // 
             // FrmPhieuNhap
             // 
@@ -467,7 +475,7 @@
         private System.Windows.Forms.ComboBox cbMaHH2;
         private System.Windows.Forms.ComboBox cbMaPN2;
         private System.Windows.Forms.ComboBox cbMaNV1;
-        private System.Windows.Forms.ComboBox cbMaPN1;
+        private System.Windows.Forms.TextBox txtMaPN1;
 
     }
 }

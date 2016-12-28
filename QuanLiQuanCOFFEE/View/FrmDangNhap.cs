@@ -46,7 +46,7 @@ namespace QuanLiQuanCOFFEE
             frmchinh f = new frmchinh();
             this.Hide();
             f.ShowDialog();
-            this.Show();
+            
         }
     }
 }
