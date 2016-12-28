@@ -109,6 +109,12 @@ namespace QuanLiQuanCOFFEE
             f.Show();
         }
 
+        private void bánHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmThongKe f = new FrmThongKe();
+            f.Show();
+        }
+
        
       
 

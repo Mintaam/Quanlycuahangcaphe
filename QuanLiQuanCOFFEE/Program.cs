@@ -16,7 +16,7 @@ namespace QuanLiQuanCOFFEE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmBan());
+            Application.Run(new frmchinh());
         }
     }
 }
