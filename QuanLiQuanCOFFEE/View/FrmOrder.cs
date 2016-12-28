@@ -16,5 +16,10 @@ namespace QuanLiQuanCOFFEE
         {
             InitializeComponent();
         }
+
+        private void Frmorder_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

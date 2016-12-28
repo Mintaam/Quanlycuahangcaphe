@@ -43,17 +43,7 @@ namespace QuanLiQuanCOFFEE
             ketnoi();
         }
         int index;
-        private void dgvNCC_Click(object sender, EventArgs e)
-        {
-            index = dgvNCC.CurrentRow.Index;
-            txtMaNCC.Text = dgvNCC.Rows[index].Cells[0].Value.ToString();
-            txtTenNCC.Text = dgvNCC.Rows[index].Cells[1].Value.ToString();
-            txtDiachi.Text = dgvNCC.Rows[index].Cells[2].Value.ToString();
-            txtSDT.Text = dgvNCC.Rows[index].Cells[3].Value.ToString();
-            txtEmail.Text = dgvNCC.Rows[index].Cells[4].Value.ToString();
-
-
-        }
+        
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
@@ -125,6 +115,16 @@ namespace QuanLiQuanCOFFEE
             {
                 Application.Exit();
             }
+        }
+
+        private void dgvNCC_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            index = dgvNCC.CurrentRow.Index;
+            txtMaNCC.Text = dgvNCC.Rows[index].Cells[0].Value.ToString();
+            txtTenNCC.Text = dgvNCC.Rows[index].Cells[1].Value.ToString();
+            txtDiachi.Text = dgvNCC.Rows[index].Cells[2].Value.ToString();
+            txtSDT.Text = dgvNCC.Rows[index].Cells[3].Value.ToString();
+            txtEmail.Text = dgvNCC.Rows[index].Cells[4].Value.ToString();
         }
     }
 }
