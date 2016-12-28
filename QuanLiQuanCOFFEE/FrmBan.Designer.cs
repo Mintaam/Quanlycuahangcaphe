@@ -190,7 +190,7 @@
             this.Controls.Add(this.lbNV);
             this.Controls.Add(this.dgvBan);
             this.Name = "FrmBan";
-            this.Text = "FrmBan";
+            this.Text = "v";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBan)).EndInit();

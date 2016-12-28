@@ -15,6 +15,15 @@ namespace QuanLiQuanCOFFEE
         public FrmBan()
         {
             InitializeComponent();
+           
         }
+
     }
+
+
+
+
+
+
+
 }
