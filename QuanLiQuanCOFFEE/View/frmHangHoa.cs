@@ -261,6 +261,11 @@ namespace QuanLiQuanCOFFEE
             cbMaHH.ValueMember = "MaHH";
         }
 
+        private void dgvHH1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
        
 
         
