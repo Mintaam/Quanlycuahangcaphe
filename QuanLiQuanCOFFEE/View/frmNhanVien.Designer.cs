@@ -74,7 +74,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(75, 64);
+            this.panel1.Location = new System.Drawing.Point(8, 43);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(359, 377);
             this.panel1.TabIndex = 9;
@@ -244,7 +244,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(564, 30);
+            this.label8.Location = new System.Drawing.Point(497, 9);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(259, 31);
             this.label8.TabIndex = 8;
@@ -254,7 +254,7 @@
             // 
             this.lbNV.AutoSize = true;
             this.lbNV.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNV.Location = new System.Drawing.Point(129, 30);
+            this.lbNV.Location = new System.Drawing.Point(62, 9);
             this.lbNV.Name = "lbNV";
             this.lbNV.Size = new System.Drawing.Size(229, 31);
             this.lbNV.TabIndex = 7;
@@ -263,7 +263,7 @@
             // dgvNV
             // 
             this.dgvNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNV.Location = new System.Drawing.Point(471, 64);
+            this.dgvNV.Location = new System.Drawing.Point(404, 43);
             this.dgvNV.Name = "dgvNV";
             this.dgvNV.Size = new System.Drawing.Size(425, 377);
             this.dgvNV.TabIndex = 6;
@@ -274,7 +274,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 471);
+            this.ClientSize = new System.Drawing.Size(838, 471);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lbNV);

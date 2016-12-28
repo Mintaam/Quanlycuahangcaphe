@@ -34,7 +34,6 @@
             this.lbNV = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbMaNV1 = new System.Windows.Forms.ComboBox();
-            this.cbMaPN1 = new System.Windows.Forms.ComboBox();
             this.txtNgaylap = new System.Windows.Forms.DateTimePicker();
             this.btnSua1 = new System.Windows.Forms.Button();
             this.btnThoat1 = new System.Windows.Forms.Button();
@@ -61,6 +60,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.dgvPN2 = new System.Windows.Forms.DataGridView();
+            this.txtMaPN1 = new System.Windows.Forms.TextBox();
             this.QuảnlýPN.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -116,8 +116,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtMaPN1);
             this.panel1.Controls.Add(this.cbMaNV1);
-            this.panel1.Controls.Add(this.cbMaPN1);
             this.panel1.Controls.Add(this.txtNgaylap);
             this.panel1.Controls.Add(this.btnSua1);
             this.panel1.Controls.Add(this.btnThoat1);
@@ -139,14 +139,6 @@
             this.cbMaNV1.Size = new System.Drawing.Size(161, 21);
             this.cbMaNV1.TabIndex = 57;
             // 
-            // cbMaPN1
-            // 
-            this.cbMaPN1.FormattingEnabled = true;
-            this.cbMaPN1.Location = new System.Drawing.Point(153, 28);
-            this.cbMaPN1.Name = "cbMaPN1";
-            this.cbMaPN1.Size = new System.Drawing.Size(161, 21);
-            this.cbMaPN1.TabIndex = 58;
-            // 
             // txtNgaylap
             // 
             this.txtNgaylap.CustomFormat = "dd/MM/yy";
@@ -164,6 +156,7 @@
             this.btnSua1.TabIndex = 35;
             this.btnSua1.Text = "Sửa";
             this.btnSua1.UseVisualStyleBackColor = true;
+            this.btnSua1.Click += new System.EventHandler(this.btnSua1_Click_1);
             // 
             // btnThoat1
             // 
@@ -173,6 +166,7 @@
             this.btnThoat1.TabIndex = 36;
             this.btnThoat1.Text = "Thoát";
             this.btnThoat1.UseVisualStyleBackColor = true;
+            this.btnThoat1.Click += new System.EventHandler(this.btnThoat1_Click_1);
             // 
             // btnThem1
             // 
@@ -182,6 +176,7 @@
             this.btnThem1.TabIndex = 33;
             this.btnThem1.Text = "Thêm";
             this.btnThem1.UseVisualStyleBackColor = true;
+            this.btnThem1.Click += new System.EventHandler(this.btnThem1_Click_1);
             // 
             // btnXoa1
             // 
@@ -191,6 +186,7 @@
             this.btnXoa1.TabIndex = 34;
             this.btnXoa1.Text = "Xóa";
             this.btnXoa1.UseVisualStyleBackColor = true;
+            this.btnXoa1.Click += new System.EventHandler(this.btnXoa1_Click_1);
             // 
             // label3
             // 
@@ -234,6 +230,7 @@
             this.dgvPN1.RowTemplate.Height = 28;
             this.dgvPN1.Size = new System.Drawing.Size(424, 392);
             this.dgvPN1.TabIndex = 20;
+            this.dgvPN1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPN1_CellClick);
             // 
             // tabPage2
             // 
@@ -407,6 +404,14 @@
             this.dgvPN2.RowTemplate.Height = 28;
             this.dgvPN2.Size = new System.Drawing.Size(424, 408);
             this.dgvPN2.TabIndex = 24;
+            this.dgvPN2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPN2_CellClick);
+            // 
+            // txtMaPN1
+            // 
+            this.txtMaPN1.Location = new System.Drawing.Point(153, 29);
+            this.txtMaPN1.Name = "txtMaPN1";
+            this.txtMaPN1.Size = new System.Drawing.Size(163, 20);
+            this.txtMaPN1.TabIndex = 58;
             // 
             // FrmPhieuNhap
             // 
@@ -467,7 +472,7 @@
         private System.Windows.Forms.ComboBox cbMaHH2;
         private System.Windows.Forms.ComboBox cbMaPN2;
         private System.Windows.Forms.ComboBox cbMaNV1;
-        private System.Windows.Forms.ComboBox cbMaPN1;
+        private System.Windows.Forms.TextBox txtMaPN1;
 
     }
 }

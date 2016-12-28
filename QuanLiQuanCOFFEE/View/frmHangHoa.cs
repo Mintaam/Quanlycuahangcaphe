@@ -18,7 +18,7 @@ namespace QuanLiQuanCOFFEE
             InitializeComponent();
             loadHangHoa();
             loadChitietHH();
-            
+
         }
 
         private void loadHangHoa()
@@ -33,7 +33,7 @@ namespace QuanLiQuanCOFFEE
                 DataTable table = new DataTable();
                 com.Fill(table);
                 dgvHH1.DataSource = table;
-               
+
             }
             catch
             {
@@ -70,7 +70,7 @@ namespace QuanLiQuanCOFFEE
             }
         }
 
-     
+
 
         private void frmHangHoa_Load(object sender, EventArgs e)
         {
@@ -140,7 +140,7 @@ namespace QuanLiQuanCOFFEE
             {
                 SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
-                sua = "update CHITIETHANGHOA set MaNCC ='" + cbMaNCC.Text + "',MaHH ='" +cbMaHH.Text + "',SoLuong ='" + txtSoLuong.Text+ "', DonGia = '" + txtDonGia.Text + "' where MaHH = '" + cbMaHH.Text + "'";
+                sua = "update CHITIETHANGHOA set MaNCC ='" + cbMaNCC.Text + "',MaHH ='" + cbMaHH.Text + "',SoLuong ='" + txtSoLuong.Text + "', DonGia = '" + txtDonGia.Text + "' where MaHH = '" + cbMaHH.Text + "'";
                 SqlCommand commandsua = new SqlCommand(sua, kn);
                 commandsua.ExecuteNonQuery();
                 loadChitietHH();
@@ -155,20 +155,20 @@ namespace QuanLiQuanCOFFEE
         string them2;
         private void button3_Click(object sender, EventArgs e)
         {
-           try 
-        	{	        
-		        SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
+            try
+            {
+                SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
                 kn.Open();
                 them2 = "INSERT INTO HANGHOA (MaHH,TenHH,LoaiHH) VALUES('" + txtMaHH1.Text + "',N'" + txtTenHH1.Text + "',N'" + txtLoaiHH1.Text + "')";
                 SqlCommand commandthem2 = new SqlCommand(them2, kn);//NH k sua dc ten nut
                 commandthem2.ExecuteNonQuery();
                 loadHangHoa();
 
-        	}
-	         catch (SqlException ex)
-	         {
-	    	    MessageBox.Show(ex.Message);		
-	         }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             
                         
         }

@@ -15,12 +15,11 @@ namespace QuanLiQuanCOFFEE
     public partial class FrmDangNhap : Form
     {
         frmchinh Ql;
-        string cnStr = @"Data Source= HUYENNGO\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True";
+        string cnStr = @"Data Source= .;Initial Catalog=qlBH;Integrated Security=True";
        
-        SqlConnection kn;//= new SqlConnection(@"Data Source=HUYENNGO\SQLEXPRESS;Initial Catalog=qlBH;Integrated Security=True");
+        SqlConnection kn = new SqlConnection(@"Data Source=.;Initial Catalog=qlBH;Integrated Security=True");
         SqlCommand cmd;
-        DataSet ds;
-        SqlDataAdapter da;
+       
         public FrmDangNhap()
         {
             InitializeComponent();
